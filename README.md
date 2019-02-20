@@ -39,8 +39,10 @@ To run as a web app:
     # open http://localhost:8124/ in a web browser
 
 To run as a container:
+
     $ docker build -t avrodoc .
-    $ docker run -d -p 3000:8124 avrodoc
+    $ docker run -d -p 8124:8124 avrodoc
+    # open http://localhost:8124/ in a web browser
 
 If you want to change the schema file directory, set the `SCHEMA_DIR` environment variable. If you
 want to use a port other than 8124, set the `PORT` environment variable. The app is ready to deploy
